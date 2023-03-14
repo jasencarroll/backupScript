@@ -6,7 +6,7 @@ backupstamp="backup.$timestamp"
 echo $backupstamp
 source="/dev/nvme0n1"
 echo $source
-destination="/media/jasen/Images/$backupstamp.img.gz"
+destination="/mnt/Images/$backupstamp.img.gz"
 echo $destination
 sudo dd if=$source bs=16M status=progress | gzip -c > $destination
 
